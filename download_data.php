@@ -6,7 +6,7 @@
 require_once('vendors/com.rapiddigitalllc/xively/api.php');
 
 //print_r($_POST);
-define("XIVELY_API_KEY", "3dEjaKNfZpmKBxNHVZuJWxwrVRFfL1VwaQdaNBendJFpRsq2");
+define("XIVELY_API_KEY", "YOUR_API_KEY_GOES_HERE");
 
 if( (   array_key_exists("feed_id", $_POST) 
     && array_key_exists("datastream_id", $_POST) 
