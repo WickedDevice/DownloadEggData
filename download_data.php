@@ -77,7 +77,10 @@ else{
   $requestedRangeInSeconds = $duration * $timeUnitToSeconds[$time_unit];
 }
 
-$numberOfIntervalsInRange = $requestedRangeInSeconds / $interval;
+$numberOfIntervalsInRange = 1;
+if($interval > 0){
+  $numberOfIntervalsInRange = $requestedRangeInSeconds / $interval;
+}
 
 
 header('Content-Description: File Transfer');
